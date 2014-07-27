@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>GSAP JS : Into the Rainbow Donut - CodePen</title>
+
+  <style>
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+</style>
+
+  <link rel='stylesheet' href='http://codepen.io/assets/libs/fullpage/jquery-ui.css'>
+
+    <style>
+body {
+  background-color: #000;
+  color:white;
+}
+
+.scene {
+  width:600px;
+  height:250px;
+  margin: 200px auto;
+  perspective: 600px;
+}
+
+.wrapper {
+  width:100%;
+  height:60%;
+  transform-style: preserve-3d;
+}
+
+.tunnel {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin:0 auto;
+  transform-style: preserve-3d;
+  visibility:hidden;
+}
+
+.tunnel .ring {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px;
+  border-style: solid;
+  border-radius: 50%;
+}
+
+#nav{
+  top:80%;
+  position:absolute;
+  height:20px;
+  width:50%;
+  margin:0% 25% 0 25%;
+  text-align:right;
+  visibility:hidden;
+}
+
+#playBtn{
+  margin-top:20px;
+}
+
+.ui-slider{
+  background:none;
+  background-color:rgba(255, 255, 255, 0.2);
+}
+
+.ui-slider .ui-slider-handle { 
+  width: 40px !important; 
+  margin-left: -20px !important; 
+  height:40px !important; 
+  margin-top:-10px !important;
+}
+
+#logo{
+  position:absolute;
+  top:20px;
+  left:20px;
+  width:200px;
+
+}
+</style>
+
+    <script src="js/prefixfree.min.js"></script>
+
+    <script src="js/modernizr.js"></script>
+
+</head>
+
+<body>
+
+  <a href="http://www.greensock.com/gsap-js" target="_blank"><img id="logo" src="http://s.cdpn.io/16327/logo.svg"></a>
+<div class="scene">
+  <div class="wrapper">
+    <ul class="tunnel">
+    </ul>
+  </div>
+</div>
+
+<div id="nav">
+  <div id="slider"></div>
+  <div id="playBtn">play</div>
+</div>
+
+  <script src='http://codepen.io/assets/libs/fullpage/jquery_and_jqueryui.js'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.9.3/TweenMax.min.js'></script><script src='http://www.greensock.com/_js/jquery/jquery.ui.touch-punch.js'></script>
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>

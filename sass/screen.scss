@@ -1,0 +1,93 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+
+html{
+	font-family: "Arial", sans-serif;
+}
+
+body{
+	background-color: #666;
+}
+
+$col1: #ff003b;
+$col2: #0f131a;
+
+
+#demo1{
+	.menu{
+		margin: 0 auto;
+		background-color:red;
+		position: absolute;
+		ul{
+			max-width:400px;
+			li{
+				text-align:center;
+				background-color:orange;
+				
+
+			}
+			a{
+				padding:2em;
+				background-color:yellow;
+				display: block;
+			}
+		}
+	}
+}
+
+#demo2{
+	.cardWrapper{
+  width:200px;
+  height:200px;
+  position:relative;
+  /*background-color:#333;*/
+  float:left;
+  margin-right:10px;
+  cursor:pointer;
+  -webkit-font-smoothing:antialiased;
+}
+
+.cardFace{
+  position:absolute;
+  width:200px;
+  height:200px;
+  overflow:hidden;
+}
+
+.front{
+  background-color:#333; 
+}
+
+.back{
+  background-color:#333; 
+}
+
+
+
+.cardFace h1{
+  margin:0px;
+  font-size:30px;
+  padding:10px 0px 10px 10px;
+  border-bottom:solid 6px #aaa;
+  border-top:solid 6px #aaa;
+  background-color:black;
+  color:white;
+}
+
+
+.cardFace.back h1{
+ border-color:#91e600;
+}
+
+.moreInfo{
+  padding:10px;
+  color:white;
+  line-height:24px;
+  
+}
+}
